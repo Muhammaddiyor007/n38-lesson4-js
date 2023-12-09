@@ -234,3 +234,208 @@
 // n = 8;
 // console.log(kvadratniHisobla(n));
 
+// For11
+// function darajaHisobla(n, a) {
+//     if (n <= 0) {
+//         return "Noto'g'ri kirish. n > 0 bo'lishi kerak.";
+//     } else {
+//         let natija = 1;
+
+//         for (let i = 1; i <= n; i++) {
+//             natija *= a;
+//         }
+
+//         return `${a} ning ${n} - darajasi: ${natija}`;
+//     }
+// }
+
+// // Test qilish
+// let n = 3;
+// let a = 2;
+// console.log(darajaHisobla(n, a));
+
+// n = 4;
+// a = 3;
+// console.log(darajaHisobla(n, a));
+
+// For - 12
+// let n = parseInt(prompt("n ni kiriting (n > 0):"));
+// let a = parseInt(prompt("a ni kiriting:"));
+
+// for (let i = 1, daraja = a; i <= n; i++) {
+//     daraja *= a
+//     console.log(${a} ning ${i}-darajasi: ${daraja});
+// }
+
+// For - 13
+
+// let n = parseInt(prompt("n ni kiriting (n > 0):"));
+// let a = parseFloat(prompt("a ni kiriting:"));
+
+// let S = 1;
+
+// for (let i = 1, daraja = a; i <= n; i++) {
+//     daraja *= a
+//     S += daraja;
+// }
+
+// console.log(Yigindi (S): ${S});
+
+// For - 14
+
+// let n = parseInt(prompt("n ni kiriting (n > 0):"));
+
+// let S = 0;
+// let factorial = 1;
+
+// for (let i = 1; i <= n; i++) {
+//     factorial *= i;
+//     S += factorial;
+// }
+
+// console.log(Yigindi (S): ${S});
+
+// For - 15
+
+// let N = parseInt(prompt("N ni kiriting (N > 0):"));
+// let K = parseInt(prompt("K ni kiriting:"));
+
+// let S = 0;
+
+// for (let i = 1; i <= N; i++) {
+//     S += Math.pow(i, K);
+// }
+
+// console.log(Yigindi (S): ${S});
+
+// For - 16
+
+// let N = parseInt(prompt("N ni kiriting (N > 0):"));
+
+// let S = 0;
+
+// for (let i = 1; i <= N; i++) {
+//     S += Math.pow(i, i);
+// }
+
+// console.log(Yigindi (S): ${S});
+
+// For - 17
+
+// let A = parseInt(prompt("A ni kiriting:"));
+// let B = parseInt(prompt("B ni kiriting (A < B):"));
+
+// for (let i = A; i <= B; i++) {
+//     for (let j = 1; j <= i; j++) {
+//         console.log(i);
+//     }
+// }
+
+// For - 18
+
+// let son = parseInt(prompt("Istalgan sonni kiriting:"));
+
+// let boluvchilar = [];
+// let yigindi = 0;
+
+// for (let i = 1; i <= son; i++) {
+//     if (son % i === 0) {
+//         boluvchilar.push(i);
+//         yigindi += i;
+//     }
+// }
+
+// console.log(${son} ning boluvchilari: ${boluvchilar.join(', ')});
+// console.log(Boluvchilarning yigindisi: ${yigindi});
+
+// For - 19
+
+// let n = parseInt(prompt("n ni kiriting (n > 1):"));
+
+// let tub = true;
+
+// if (n <= 1) {
+//     console.log(${n} tub yoki tub emas.);
+// } else {
+//     for (let i = 2; i <= Math.sqrt(n); i++) {
+//         if (n % i === 0) {
+//             tub = false;
+//             break;
+//         }
+//     }
+
+//     if (tub) {
+//         console.log(${n} tub son.);
+//     } else {
+//         console.log(${n} tub emas.);
+//     }
+// }
+
+// For - 20
+
+// let N = parseInt(prompt("N ni kiriting:"));
+
+// for (let i = 1; i <= N; i++) {
+//     let tartibdagiSonlar = "";
+//     for (let j = 1; j <= i; j++) {
+//         tartibdagiSonlar += j + " ";
+//     }
+//     console.log(tartibdagiSonlar.trim());
+// }
+
+// While 1
+
+// let A = parseInt(prompt("A ni kiriting:"));
+// let B = parseInt(prompt("B ni kiriting (B < A):"));
+
+// while (A % B !== 0) {
+//     A--;
+// }
+
+// let boshQisim = A / B;
+
+// console.log(A ning maksimal darajada B kesma joylashtirilgan bosh qismi: ${boshQisim});
+
+// While 2
+
+// let A = parseInt(prompt("A ni kiriting:"));
+// let B = parseInt(prompt("B ni kiriting (B < A):"));
+
+// let joylashtirishMumkinligi = 0;
+
+// while (A >= B) {
+//     A -= B;
+//     joylashtirishMumkinligi++;
+// }
+
+// console.log(A kesmada B kesmadan nechta joylashtirish mumkinligi: ${joylashtirishMumkinligi});
+
+// While 3
+
+// let n = parseInt(prompt("n ni kiriting (n > 0):"));
+
+// if (n > 0) {
+//     if (Math.pow(3, 2) === n) {
+//         console.log("3 - ning darajasi");
+//     } else {
+//         console.log("3 - ning darajasi emas");
+//     }
+// } else {
+//     console.log("Noto'g'ri qiymat kiritildi. n > 0 bo'lishi kerak!");
+// }
+
+// While 4
+
+// let n = parseInt(prompt("n ni kiriting:"));
+// let m = parseInt(prompt("m ni kiriting (m < n):"));
+
+// while (n <= m) {
+//     console.log("Noto'g'ri qiymatlar kiritildi. n > m bo'lishi kerak!");
+//     n = parseInt(prompt("n ni kiriting:"));
+//     m = parseInt(prompt("m ni kiriting (m < n):"));
+// }
+
+// let butunQismi = Math.floor(n / m);
+// let qoldiq = n % m;
+
+// console.log(${n} ni ${m} ga bolib, butun qismi: ${butunQismi}, qoldiq: ${qoldiq});
