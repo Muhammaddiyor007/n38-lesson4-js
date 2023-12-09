@@ -439,3 +439,22 @@
 // let qoldiq = n % m;
 
 // console.log(${n} ni ${m} ga bolib, butun qismi: ${butunQismi}, qoldiq: ${qoldiq});
+
+// While 5
+
+// let n = parseInt(prompt("n ni kiriting (n > 0):"));
+
+// while (n <= 0) {
+//     console.log("Noto'g'ri qiymat kiritildi. n > 0 bo'lishi kerak!");
+//     n = parseInt(prompt("n ni kiriting (n > 0):"));
+// }
+
+// let teskariRaqamlar = "";
+
+// while (n > 0) {
+//     let qoldiq = n % 10;
+//     teskariRaqamlar += qoldiq;
+//     n = Math.floor(n / 10);
+// }
+
+// console.log("Berilgan sonning teskari tartibdagi raqamlari: " + teskariRaqamlar);
